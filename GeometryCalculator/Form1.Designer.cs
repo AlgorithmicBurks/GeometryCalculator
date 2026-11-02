@@ -33,16 +33,16 @@
             TxtLength = new TextBox();
             TxtWidth = new TextBox();
             lblArea = new Label();
-            textBox3 = new TextBox();
+            TxtRectangleAreaResult = new TextBox();
             btnCalculate = new Button();
             label1 = new Label();
             label2 = new Label();
             TxtRadius = new TextBox();
-            TxtCircumference = new TextBox();
+            TxtCircumferenceResult = new TextBox();
             lblRectangle = new Label();
             lblCircle = new Label();
             lblArea2 = new Label();
-            TxtArea2 = new TextBox();
+            TxtCircleAreaResult = new TextBox();
             btnExit = new Button();
             SuspendLayout();
             // 
@@ -87,13 +87,13 @@
             lblArea.TabIndex = 4;
             lblArea.Text = "Area:";
             // 
-            // textBox3
+            // TxtRectangleAreaResult
             // 
-            textBox3.Location = new Point(87, 126);
-            textBox3.Name = "textBox3";
-            textBox3.ReadOnly = true;
-            textBox3.Size = new Size(125, 27);
-            textBox3.TabIndex = 5;
+            TxtRectangleAreaResult.Location = new Point(87, 126);
+            TxtRectangleAreaResult.Name = "TxtRectangleAreaResult";
+            TxtRectangleAreaResult.ReadOnly = true;
+            TxtRectangleAreaResult.Size = new Size(125, 27);
+            TxtRectangleAreaResult.TabIndex = 5;
             // 
             // btnCalculate
             // 
@@ -130,13 +130,13 @@
             TxtRadius.Size = new Size(125, 27);
             TxtRadius.TabIndex = 9;
             // 
-            // TxtCircumference
+            // TxtCircumferenceResult
             // 
-            TxtCircumference.Location = new Point(489, 79);
-            TxtCircumference.Name = "TxtCircumference";
-            TxtCircumference.ReadOnly = true;
-            TxtCircumference.Size = new Size(125, 27);
-            TxtCircumference.TabIndex = 10;
+            TxtCircumferenceResult.Location = new Point(489, 79);
+            TxtCircumferenceResult.Name = "TxtCircumferenceResult";
+            TxtCircumferenceResult.ReadOnly = true;
+            TxtCircumferenceResult.Size = new Size(125, 27);
+            TxtCircumferenceResult.TabIndex = 10;
             // 
             // lblRectangle
             // 
@@ -166,13 +166,13 @@
             lblArea2.TabIndex = 13;
             lblArea2.Text = "Area:";
             // 
-            // TxtArea2
+            // TxtCircleAreaResult
             // 
-            TxtArea2.Location = new Point(489, 126);
-            TxtArea2.Name = "TxtArea2";
-            TxtArea2.ReadOnly = true;
-            TxtArea2.Size = new Size(125, 27);
-            TxtArea2.TabIndex = 14;
+            TxtCircleAreaResult.Location = new Point(489, 126);
+            TxtCircleAreaResult.Name = "TxtCircleAreaResult";
+            TxtCircleAreaResult.ReadOnly = true;
+            TxtCircleAreaResult.Size = new Size(125, 27);
+            TxtCircleAreaResult.TabIndex = 14;
             // 
             // btnExit
             // 
@@ -190,16 +190,16 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(btnExit);
-            Controls.Add(TxtArea2);
+            Controls.Add(TxtCircleAreaResult);
             Controls.Add(lblArea2);
             Controls.Add(lblCircle);
             Controls.Add(lblRectangle);
-            Controls.Add(TxtCircumference);
+            Controls.Add(TxtCircumferenceResult);
             Controls.Add(TxtRadius);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(btnCalculate);
-            Controls.Add(textBox3);
+            Controls.Add(TxtRectangleAreaResult);
             Controls.Add(lblArea);
             Controls.Add(TxtWidth);
             Controls.Add(TxtLength);
@@ -218,16 +218,16 @@
         private TextBox TxtLength;
         private TextBox TxtWidth;
         private Label lblArea;
-        private TextBox textBox3;
+        private TextBox TxtRectangleAreaResult;
         private Button btnCalculate;
         private Label label1;
         private Label label2;
         private TextBox TxtRadius;
-        private TextBox TxtCircumference;
+        private TextBox TxtCircumferenceResult;
         private Label lblRectangle;
         private Label lblCircle;
         private Label lblArea2;
-        private TextBox TxtArea2;
+        private TextBox TxtCircleAreaResult;
         private Button btnExit;
     }
 }

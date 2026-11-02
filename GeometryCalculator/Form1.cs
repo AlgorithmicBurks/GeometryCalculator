@@ -19,9 +19,10 @@ namespace GeometryCalculator
                 double.TryParse(TxtWidth.Text, out double width))
             {
                 double RectangleArea = length * width;
-                double rectanglePerimeter = 2 * (length + width);
 
-                lblRectangle.Text = $"Rectangle Area: {RectangleArea}";
+                TxtRectangleAreaResult.Text = RectangleArea.ToString();
+
+                double rectanglePerimeter = 2 * (length + width);
             }
             else
             {
@@ -34,7 +35,8 @@ namespace GeometryCalculator
                 double circleArea = Math.PI * radius * radius;
                 double circleCircumference = 2 * Math.PI * radius;
 
-                lblCircle.Text = $"Circle Area: {circleArea:F2}";
+                TxtCircleAreaResult.Text = circleArea.ToString("F2");
+                TxtCircumferenceResult.Text = circleCircumference.ToString("F2");
             }
             else
             {
